@@ -1,61 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Mohamad%20Salman&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Computer%20Engineering%20%40%20UofT%20%7C%20AI%2FML%20Developer%20%26%20Researcher&descSize=16&descAlignY=58&descColor=a78bfa" alt="header"/>
+# Mohamad Salman
+
+**Computer Engineering @ UofT | AI/ML Developer & Researcher**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohamadmsalman82)
 [![GitHub](https://img.shields.io/badge/GitHub-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohamadmsalman82)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohamad.salman@mail.utoronto.ca)
 
 </div>
-
----
-
-<img align="right" width="340" src="https://github-readme-stats.vercel.app/api?username=mohamadmsalman82&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=7c3aed&text_color=c9d1d9&count_private=true" />
-
-### 👋 About Me
-
-I'm a **Computer Engineering** student at the **University of Toronto** (Minor: AI Engineering) with a deep passion for **AI/ML development and research** — from designing custom attention mechanisms and fine-tuning large language models, to pushing the limits of GPU-accelerated compute.
-
-I love working at the intersection of **systems engineering** and **machine intelligence** — building things that are both fast and smart.
-
-- 🎓 BASc Computer Engineering @ UofT (PEY Co-op, Class of 2029)
-- 🔬 ML Researcher @ **UTMIST** — designing sparse attention for BART
-- 💼 Software Developer @ **Nodalli** — building AI-native infrastructure
-- 🌍 Based in **Toronto, ON**
-- 📬 mohamad.salman@mail.utoronto.ca
-
-<br clear="right"/>
-
----
-
-## 🚀 What I'm Currently Working On
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 UTMIST — ML Research
-**Content-Aware Sparse Attention for BART**
-
-Standard attention scales quadratically with sequence length — existing fixes like Big Bird use hardcoded patterns that don't adapt to input. We're building a mechanism that reads the content and decides which tokens to attend to dynamically.
-
-Early results: competitive accuracy while performing only **12% of Big Bird's softmax calculations**. Targeting a research paper and Hugging Face release.
-
-`PyTorch` `CUDA` `Transformers` `DeepSpeed` `BART`
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ Nodalli — AI Startup
-**Unified Action Adapter Layer**
-
-Building the execution backbone of an AI platform — routing NLP-parsed commands across 4 platform APIs with field-level validation, Redis-backed OAuth, and automated credential management for **50K+ user records** and **2,000 actions/day**.
-
-`Node.js` `Redis` `PostgreSQL` `FastAPI` `OAuth 2.0`
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -95,6 +48,50 @@ Building the execution backbone of an AI platform — routing NLP-parsed command
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 </div>
+
+---
+
+### 👋 About Me
+
+I'm a **Computer Engineering** student at the **University of Toronto** (Minor: AI Engineering) with a deep passion for **AI/ML development and research** — from designing custom attention mechanisms and fine-tuning large language models, to pushing the limits of GPU-accelerated compute.
+
+I love working at the intersection of **systems engineering** and **machine intelligence** — building things that are both fast and smart.
+
+- 🎓 BASc Computer Engineering @ UofT (PEY Co-op, Class of 2029)
+- 🔬 ML Researcher @ **UTMIST** — designing sparse attention for BART
+- 💼 Software Developer @ **Nodalli** — building AI-native infrastructure
+- 🌍 Based in **Toronto, ON**
+- 📬 mohamad.salman@mail.utoronto.ca
+
+---
+
+## 🚀 What I'm Currently Working On
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 UTMIST — ML Research
+**Content-Aware Sparse Attention for BART**
+
+Standard attention scales quadratically with sequence length — existing fixes like Big Bird use hardcoded patterns that don't adapt to input. We're building a mechanism that reads the content and decides which tokens to attend to dynamically.
+
+
+`PyTorch` `CUDA` `Transformers` `DeepSpeed` `BART`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Nodalli — AI Startup
+**Unified Action Adapter Layer**
+
+Building the execution backbone of an AI platform — routing NLP-parsed commands across 4 platform APIs with field-level validation, Redis-backed OAuth, and automated credential management. 
+
+`Node.js` `Redis` `PostgreSQL` `FastAPI` `OAuth 2.0`
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -160,20 +157,6 @@ No-code workflow automation platform on Cloudflare Workers. Managed state for **
 ---
 
 <div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=mohamadmsalman82&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=7c3aed&currStreakLabel=a78bfa" alt="GitHub Streak" />
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamadmsalman82&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" alt="footer"/>
 
 *"The best way to predict the future is to build it."*
 
