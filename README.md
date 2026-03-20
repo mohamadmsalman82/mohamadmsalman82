@@ -12,6 +12,20 @@
 
 ---
 
+### 👋 About Me
+
+I'm a **Computer Engineering** student at the **University of Toronto** (Minor: AI Engineering) with a deep passion for **AI/ML development and research** — from designing custom attention mechanisms and fine-tuning large language models, to pushing the limits of GPU-accelerated compute.
+
+I love working at the intersection of **systems engineering** and **machine intelligence** — building things that are both fast and smart.
+
+- 🎓 BASc Computer Engineering @ UofT (PEY Co-op, Class of 2029)
+- 🔬 ML Researcher @ **UTMIST** — designing sparse attention for BART
+- 💼 Software Developer @ **Nodalli** — building AI-native infrastructure
+- 🌍 Based in **Toronto, ON**
+- 📬 mohamad.salman@mail.utoronto.ca
+
+---
+
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -48,20 +62,6 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 </div>
-
----
-
-### 👋 About Me
-
-I'm a **Computer Engineering** student at the **University of Toronto** (Minor: AI Engineering) with a deep passion for **AI/ML development and research** — from designing custom attention mechanisms and fine-tuning large language models, to pushing the limits of GPU-accelerated compute.
-
-I love working at the intersection of **systems engineering** and **machine intelligence** — building things that are both fast and smart.
-
-- 🎓 BASc Computer Engineering @ UofT (PEY Co-op, Class of 2029)
-- 🔬 ML Researcher @ **UTMIST** — designing sparse attention for BART
-- 💼 Software Developer @ **Nodalli** — building AI-native infrastructure
-- 🌍 Based in **Toronto, ON**
-- 📬 mohamad.salman@mail.utoronto.ca
 
 ---
 
