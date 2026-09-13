@@ -14,7 +14,7 @@
 
 - **Machine learning researcher at the University of Toronto,** co-author on a paper submitting to EuCAP 2027.
 - **Built an iOS app alone** that hit 10,000 users and $4,000 MRR, then demoed it live on CP24.
-- **Really interested in ML systems,** and that is where I am focusing my career. All my projects are below.
+- **Focusing my career on machine learning,** research and modelling as much as systems. Projects are below.
 
 <div align="center">
   <br>
