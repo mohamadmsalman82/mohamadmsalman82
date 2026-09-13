@@ -11,22 +11,49 @@
 
 ---
 
-I build the layer underneath the model. Inference runtimes, distributed training frameworks, and
-compilers, each written from scratch and then benchmarked against the library it replaces. When the
-benchmark loses, the README says so and explains why.
+## About me in a nutshell
 
-I also ship products. One of them is an iOS app with ten thousand users that I built alone.
+- **Machine learning researcher at the University of Toronto,** co-author on a paper submitting to EuCAP 2027.
+- **Built an iOS app alone** that hit 10,000 users and $4,000 MRR, then demoed it live on CP24.
+- **Wrote a Llama inference engine in raw CUDA** that saturates 79% of an RTX 4090's memory bus.
+- **Wrote a distributed training framework** that beats NVIDIA's Megatron-LM by 37%.
+- **Found a CVSS 9.1 flaw** in a 30k-star AI serving project and took it through to a CVE.
+
+**I am going all in on machine learning.** The work I want is the layer underneath the model:
+training systems, inference runtimes, and the GPU engineering that makes both fast.
+
+<div align="center">
+  <br>
+  <img src="assets/cp24.jpg" alt="Mohamad Salman on CP24, introduced on screen as CrowdKick Founder" width="760">
+  <br>
+  <sub>Live on CP24 demoing CrowdKick, one day before the World Cup.</sub>
+</div>
 
 <br>
 
-<table width="100%">
-<tr>
-<td align="center" width="25%"><h3>79.1%</h3><sub><b>of peak HBM bandwidth</b><br>hand-written CUDA<br>Llama runtime</sub><br><img src="assets/px.svg" width="205" height="1" alt=""></td>
-<td align="center" width="25%"><h3>+37%</h3><sub><b>over Megatron-LM</b><br>pipeline-parallel<br>throughput</sub><br><img src="assets/px.svg" width="205" height="1" alt=""></td>
-<td align="center" width="25%"><h3>3.0&times;</h3><sub><b>faster than <code>torch.compile</code></b><br>batch 1, BERT-base,<br>own compiler</sub><br><img src="assets/px.svg" width="205" height="1" alt=""></td>
-<td align="center" width="25%"><h3>10K+</h3><sub><b>users</b><br>iOS app shipped<br>solo in 6 weeks</sub><br><img src="assets/px.svg" width="205" height="1" alt=""></td>
-</tr>
-</table>
+# &nbsp;🔬&nbsp; Research
+
+### Machine Learning Researcher, University of Toronto &nbsp;<sub>with Prof. Parinaz Naseri</sub>
+
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"> <img src="https://img.shields.io/badge/EuCAP_2027-00629B?style=flat-square&logo=ieee&logoColor=white">
+
+- **What I work on.** Surrogate models that stand in for electromagnetic solvers on antenna metasurfaces. A structure that costs hours of solver time becomes a forward pass in milliseconds, which is what makes searching the design space feasible at all.
+- **What I built.** I benchmarked Gaussian processes, random forests, and gradient boosting in scikit-learn, then built the PyTorch neural network that beat all of them, with custom early stopping and a physics-informed loss. I own the data cleaning, feature encoding, cross-validation, and reproducible training code end to end.
+- **What it changed.** My study decided the team's input representation by showing one shape family needs **6 to 8 times less** simulation data for the same accuracy. I also showed that an energy-conservation shortcut the team planned to rely on would introduce up to **183 times** the label error, which changed the method before it reached the paper.
+- **Where it goes.** Co-author on a paper submitting to **EuCAP 2027**, an IEEE international conference.
+
+<br>
+
+# &nbsp;🚀&nbsp; CrowdKick
+
+### [CrowdKick](https://apps.apple.com/ca/app/crowdkick-sports-venue-finder/id6763609021) &nbsp;<sub>founder and CTO, built and shipped alone</sub>
+
+<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white"> <img src="https://img.shields.io/badge/LLM_Pipeline-8A2BE2?style=flat-square"> <img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat-square&logo=appstore&logoColor=white">
+
+- **What it is.** A real-time iOS app that tells you which bars near you are showing the game you want to watch. I designed it, built it, launched it, and still run it, by myself.
+- **Why it stands out.** Ten thousand users, $4,000 in monthly recurring revenue, and 150 partner venues inside six weeks. It peaked in the **top 15 of the App Store Sports category** on organic growth alone, and CP24 put me on air to demo it to roughly 70,000 viewers.
+- **The machine learning inside it.** Venue coverage comes from an NLP pipeline that uses LLMs to read Reddit posts and pull out which bar is showing which match. Every extraction is validated with Pydantic, fuzzy-matched to a real venue, and scored for confidence before it reaches a user.
+- **Skills shown.** Taking a production mobile app from idea to paying users, React Native, PostgreSQL and PostGIS for geospatial queries, LLM extraction with structured validation, and `pytest` suites over synthetic data for every pipeline stage.
 
 <br>
 
@@ -37,7 +64,7 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white"> <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white"> <img src="https://img.shields.io/badge/cuBLAS-76B900?style=flat-square"> <img src="https://img.shields.io/badge/Nsight-1A1A1A?style=flat-square&logo=nvidia&logoColor=76B900">
 
 - **What it is.** A complete LLM inference engine in C++17 and CUDA with no PyTorch, no libtorch, and no inference library of any kind. I wrote the safetensors loader, the BPE tokenizer, the paged KV cache, and a custom kernel for every operation in the model, including grouped-query attention and RoPE. cuBLAS does the matmuls and nothing else.
-- **Why it stands out.** Decoding a token means reading all 2.47 GB of weights out of HBM, so the only honest score is what fraction of the memory bus you saturate. This runtime hits 798 GB/s on an RTX 4090, which is 79.1% of the card's theoretical peak, at 322 tokens/s. HuggingFace Transformers manages 17.7% on the same card. Every layer was validated against a PyTorch reference before any of it was timed.
+- **Why it stands out.** Decoding a token means reading all 2.47 GB of weights out of HBM, so the only honest score is what fraction of the memory bus you saturate. This runtime hits 798 GB/s on an RTX 4090, which is **79.1% of the card's theoretical peak**, at 322 tokens/s. HuggingFace Transformers manages 17.7% on the same card. Every layer was validated against a PyTorch reference before any of it was timed.
 - **Skills shown.** CUDA kernel engineering, GPU memory hierarchy and occupancy, roofline analysis, Nsight profiling, modern C++, and the discipline to prove numerical correctness before claiming a speedup.
 
 <br>
@@ -47,7 +74,7 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/NCCL-76B900?style=flat-square&logo=nvidia&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Distributed-8A2BE2?style=flat-square">
 
 - **What it is.** Tensor, sequence, pipeline, and data parallelism for GPT-2, all implemented from first principles in about 3,500 lines. No DDP, no FSDP, no DeepSpeed, no Megatron code. Pipeline parallelism includes both 1F1B and interleaved schedules, and the trainer composes all four axes at once with selective recompute and bf16 weights on fp32 masters.
-- **Why it stands out.** It races NVIDIA's own Megatron-LM on identical hardware and identical kernels, and wins by 37% on four-way pipeline parallel and 16% on two-way data parallel. Where it loses, at two-way tensor parallel, the README publishes the number and the reason instead of hiding it. Five correctness suites prove each parallel model matches a single-process reference numerically.
+- **Why it stands out.** It races NVIDIA's own Megatron-LM on identical hardware and identical kernels, and wins by **37% on four-way pipeline parallel** and 16% on two-way data parallel. Where it loses, at two-way tensor parallel, the README publishes the number and the reason instead of hiding it. Five correctness suites prove each parallel model matches a single-process reference numerically.
 - **Skills shown.** `torch.distributed` and NCCL at the collective level, 1F1B pipeline scheduling, gradient bucketing overlapped with backward, vocab-parallel cross-entropy, mixed-precision training, and debugging deadlocks across multiple communicators.
 
 <br>
@@ -57,12 +84,12 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 <img src="https://img.shields.io/badge/Triton-8A2BE2?style=flat-square"> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/CUDA_Graphs-76B900?style=flat-square&logo=nvidia&logoColor=white"> <img src="https://img.shields.io/badge/Compilers-0F172A?style=flat-square">
 
 - **What it is.** It captures a model with `torch.export`, lowers it into its own graph IR, fuses elementwise and reduction chains into single Triton kernels, packs every intermediate tensor into one planned memory arena, and replays the entire schedule as a CUDA graph.
-- **Why it stands out.** At batch size 1 on BERT-base it runs 5.5 times faster than eager and 3.0 times faster than `torch.compile`. The more interesting result is that the advantage vanishes by batch 8, and the project is built around answering exactly that question: how much is specializing all the way to static-shape inference actually worth, and where does it stop paying. Every variant is checked against eager before it is timed.
+- **Why it stands out.** At batch size 1 on BERT-base it runs 5.5 times faster than eager and **3.0 times faster than `torch.compile`**. The more interesting result is that the advantage vanishes by batch 8, and the project is built around answering exactly that question: how much is specializing all the way to static-shape inference actually worth, and where does it stop paying. Every variant is checked against eager before it is timed.
 - **Skills shown.** Compiler and IR design, operator fusion, Triton kernel authoring, whole-graph memory planning, CUDA graph capture, and benchmark methodology that reports the negative result.
 
 <br>
 
-# &nbsp;🧠&nbsp; Applied ML &amp; Shipped Software
+# &nbsp;🧠&nbsp; Applied Machine Learning
 
 ### [physsplat](https://github.com/mohamadmsalman82/physsplat) &nbsp;<sub>a photo goes in, interactive learned 3D physics comes out</sub> &nbsp;[![demo](https://img.shields.io/badge/try_it_live-2EA44F?style=flat-square&logo=vercel&logoColor=white)](https://physsplat.vercel.app)
 
@@ -79,28 +106,8 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 <img src="https://img.shields.io/badge/LLaMA_3.1_8B-0668E1?style=flat-square&logo=meta&logoColor=white"> <img src="https://img.shields.io/badge/QLoRA-FFD21E?style=flat-square&logo=huggingface&logoColor=black"> <img src="https://img.shields.io/badge/DeepSpeed-0F6CBD?style=flat-square"> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
 
 - **What it is.** A framework where LLM agents run structured debates, with five role-specific agents and three turn-taking protocols. Any agent can be backed by a different provider, so GPT-4 can argue against Claude while Cohere fact-checks, all behind one async interface with retries and rate-limit handling.
-- **Why it stands out.** The judge is the expensive part, so I replaced it. A LoRA adapter of 4M trainable parameters on LLaMA 3.1 8B, trained on 5,000 debate transcripts at 4-bit precision with DeepSpeed ZeRO, reaches 87% agreement with GPT-4 judgements on a held-out set and cuts serving latency by 70%. The repo carries 89 tests at 93% coverage, run against a mock provider so the suite costs nothing.
+- **Why it stands out.** The judge is the expensive part, so I replaced it. A LoRA adapter of 4M trainable parameters on LLaMA 3.1 8B, trained on 5,000 debate transcripts at 4-bit precision with DeepSpeed ZeRO, reaches **87% agreement with GPT-4 judgements** on a held-out set and cuts serving latency by 70%. The repo carries 89 tests at 93% coverage, run against a mock provider so the suite costs nothing.
 - **Skills shown.** QLoRA fine-tuning, distributed training with DeepSpeed ZeRO, 4-bit quantization, self-hosted inference deployment, async multi-provider orchestration, evaluation design, and testing an LLM system without paying per run.
-
-<br>
-
-### [CrowdKick](https://apps.apple.com/ca/app/crowdkick-sports-venue-finder/id6763609021) &nbsp;<sub>the sports app I built and shipped alone</sub>
-
-<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white"> <img src="https://img.shields.io/badge/LLM_Pipeline-8A2BE2?style=flat-square">
-
-- **What it is.** A real-time iOS app that tells you which bars near you are showing the game you want to watch. I designed it, built it, launched it, and run it, start to finish, by myself.
-- **Why it stands out.** Ten thousand users, $4,000 in monthly recurring revenue, and 150 partner venues inside six weeks. It peaked in the top 15 of the App Store Sports category on organic growth alone, and I demoed it live on CP24 to roughly 70,000 viewers. The venue data comes from an NLP pipeline that uses LLMs to read Reddit posts, validates every extraction with Pydantic, fuzzy-matches it to a real venue, and scores its own confidence.
-- **Skills shown.** Shipping a production mobile app end to end, React Native, PostgreSQL and PostGIS for geospatial queries, LLM extraction with structured validation, `pytest` suites over synthetic data for every pipeline stage, and owning a product that real people pay for.
-
-<br>
-
-# &nbsp;🔬&nbsp; Research
-
-**Undergraduate ML Researcher, University of Toronto** &nbsp;<sub>with Prof. Parinaz Naseri</sub>
-
-- Building surrogate models that predict electromagnetic simulation results for antenna metasurfaces, turning hours of solver time into milliseconds. Co-author on a paper submitting to **EuCAP 2027**, an IEEE international conference.
-- I benchmarked Gaussian processes, random forests, and gradient boosting in scikit-learn, then built the neural network in PyTorch that beat all of them. My study decided the team's input representation by showing one choice needs **6 to 8 times less** simulation data for the same accuracy.
-- I also showed that an energy-conservation shortcut the team planned to rely on would introduce up to **183 times** the label error, which changed the method before it reached the paper.
 
 <br>
 
