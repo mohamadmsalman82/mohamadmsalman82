@@ -19,18 +19,14 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 
 <br>
 
-<div align="center">
-
 <table width="100%">
 <tr>
-<td align="center" width="25%"><h3>79.1%</h3><sub><b>of peak HBM bandwidth</b><br>hand-written CUDA<br>Llama runtime</sub></td>
-<td align="center" width="25%"><h3>+37%</h3><sub><b>over Megatron-LM</b><br>pipeline-parallel<br>throughput</sub></td>
-<td align="center" width="25%"><h3>3.0&times;</h3><sub><b>faster than torch.compile</b><br>batch 1, BERT-base,<br>own compiler</sub></td>
-<td align="center" width="25%"><h3>10K+</h3><sub><b>users</b><br>iOS app shipped<br>solo in 6 weeks</sub></td>
+<td align="center" width="25%"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79.1%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><sub><b>of peak HBM bandwidth</b><br>hand-written CUDA<br>Llama runtime</sub></td>
+<td align="center" width="25%"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+37%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><sub><b>over Megatron-LM</b><br>pipeline-parallel<br>throughput</sub></td>
+<td align="center" width="25%"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.0&times;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><sub><b>faster than <code>torch.compile</code></b><br>batch 1, BERT-base,<br>own compiler</sub></td>
+<td align="center" width="25%"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10K+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><sub><b>users</b><br>iOS app shipped<br>solo in 6 weeks</sub></td>
 </tr>
 </table>
-
-</div>
 
 <br>
 
