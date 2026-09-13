@@ -19,6 +19,8 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 
 <br>
 
+<div align="center">
+
 <table width="100%">
 <tr>
 <td align="center" width="25%"><h3>79.1%</h3><sub><b>of peak HBM bandwidth</b><br>hand-written CUDA<br>Llama runtime</sub></td>
@@ -27,6 +29,8 @@ I also ship products. One of them is an iOS app with ten thousand users that I b
 <td align="center" width="25%"><h3>10K+</h3><sub><b>users</b><br>iOS app shipped<br>solo in 6 weeks</sub></td>
 </tr>
 </table>
+
+</div>
 
 <br>
 
