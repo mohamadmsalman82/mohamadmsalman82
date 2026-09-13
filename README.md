@@ -1,11 +1,10 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Mohamad Salman. ML systems, GPU infrastructure, and software that ships." width="100%">
+  <img src="assets/banner.svg" alt="Mohamad Salman, University of Toronto, Computer Engineering" width="100%">
 </div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/msalman06"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:mohamad.salman@mail.utoronto.ca"><img src="https://img.shields.io/badge/Email-C71610?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"></a>
-  <a href="https://physsplat.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-2EA44F?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo"></a>
   <img src="https://img.shields.io/badge/Toronto,_ON-1F2937?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Toronto">
 </p>
 
@@ -15,12 +14,7 @@
 
 - **Machine learning researcher at the University of Toronto,** co-author on a paper submitting to EuCAP 2027.
 - **Built an iOS app alone** that hit 10,000 users and $4,000 MRR, then demoed it live on CP24.
-- **Wrote a Llama inference engine in raw CUDA** that saturates 79% of an RTX 4090's memory bus.
-- **Wrote a distributed training framework** that beats NVIDIA's Megatron-LM by 37%.
-- **Found a CVSS 9.1 flaw** in a 30k-star AI serving project and took it through to a CVE.
-
-**I am going all in on machine learning.** The work I want is the layer underneath the model:
-training systems, inference runtimes, and the GPU engineering that makes both fast.
+- **Really interested in ML systems,** and that is where I am focusing my career. All my projects are below.
 
 <div align="center">
   <br>
