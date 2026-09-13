@@ -109,7 +109,7 @@
 
 | | |
 |---|---|
-| **AI infrastructure security** | Found and coordinated disclosure of a **CVSS 9.1** unauthenticated path traversal in [LocalAI](https://github.com/mudler/LocalAI), a 30k-star model serving project, through to a CVE. The method generalizes: track a project's security commits, then audit every sibling code path the fix did not touch. |
+| **AI infrastructure security** | Found an unauthenticated path traversal in [LocalAI](https://github.com/mudler/LocalAI), a 49k-star model serving project, by auditing the sibling code paths that an earlier path traversal patch left unguarded. Confirmed with a working proof of concept against a local instance. The method generalizes: track a project's security commits, then audit every code path the fix did not cover. |
 | **[codelangid](https://github.com/mohamadmsalman82/codelangid)** | A character-level CNN that identifies which of 10 programming languages a snippet is written in, from the characters alone. **90.6%** on a final test set of fresh repositories that was collected after every hyperparameter was frozen and evaluated exactly once, with leakage checked by exact hash and a MinHash near-duplicate sweep. |
 
 <br>
